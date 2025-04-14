@@ -10,6 +10,7 @@ import (
 )
 
 func TestCafeNegative(t *testing.T) {
+	
 	handler := http.HandlerFunc(mainHandle)
 
 	requests := []struct {
@@ -32,6 +33,7 @@ func TestCafeNegative(t *testing.T) {
 }
 
 func TestCafeWhenOk(t *testing.T) {
+
 	handler := http.HandlerFunc(mainHandle)
 
 	requests := []string{
